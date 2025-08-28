@@ -1,0 +1,133 @@
+{
+  "name": "home",
+  "type": "page",
+  "url": "/home",
+  "params": {},
+  "variables": [
+    {
+      "name": "result",
+      "description": "",
+      "type": "property",
+      "value": ""
+    },
+    {
+      "name": "serv1",
+      "type": "service",
+      "id": "service"
+    },
+    {
+      "name": "a",
+      "description": "",
+      "type": "method",
+      "body": "$ctrl.result = await $ctrl.serv1.get()",
+      "invokeOnLoad": true,
+      "isAsync": true,
+      "returnType": {
+        "name": "any"
+      },
+      "parameters": [],
+      "watch": []
+    },
+    {
+      "name": "$state",
+      "type": "service"
+    }
+  ],
+  "children": [
+    {
+      "name": "Button",
+      "nodeName": "bln-button",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "UFw6OU"
+        },
+        {
+          "property": "core",
+          "value": ""
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "core-component",
+      "expressions": [
+        {
+          "expression": "$ctrl.$state.go('p1-with-api')",
+          "to": "onClick"
+        }
+      ]
+    },
+    {
+      "name": "label",
+      "nodeName": "label",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "7PHyW2"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [
+        {
+          "name": "text",
+          "nodeName": "text",
+          "textContent": "$ctrl.result",
+          "evaluate": true
+        }
+      ],
+      "comments": ""
+    },
+    {
+      "name": "comp",
+      "nodeName": "comp",
+      "elementId": "",
+      "attributes": [
+        {
+          "property": "data-id",
+          "value": "LbnmBd"
+        }
+      ],
+      "classList": [],
+      "conditionalClasses": [],
+      "conditionalStyles": [],
+      "contentType": "text",
+      "displayExpression": "",
+      "events": {},
+      "iterate": {
+        "array": "",
+        "variable": "",
+        "trackByIndex": false
+      },
+      "styles": [],
+      "children": [],
+      "comments": "",
+      "type": "custom-component",
+      "expressions": []
+    }
+  ]
+}
